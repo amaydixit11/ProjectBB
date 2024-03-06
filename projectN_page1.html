@@ -20,17 +20,11 @@
             color: white;
             padding: 20px;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         .logos {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
-            max-width: 800px;
-            margin-bottom: 10px;
         }
         .logo img {
             width: 70px;
@@ -41,7 +35,6 @@
             font-size: 24px;
             font-weight: bold;
             text-transform: uppercase;
-            margin-bottom: 10px;
         }
         nav {
             background-color: #007bff; /* Set background color for navigation box */
@@ -50,10 +43,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin-bottom: 20px;
-            width: calc(100% - 40px); /* Calculate width */
-            max-width: 800px; /* Limit max width */
-            margin: 0 auto; /* Center horizontally */
+            margin: 10px 0;
         }
         nav a {
             color: white;
@@ -67,22 +57,21 @@
             background-color: #0056b3;
         }
         .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-            text-align: center;
+            gap: 20px;
+            padding: 0 20px; /* Add padding */
         }
         .button {
-            width: calc(50% - 10px); /* Adjust button width */
-            height: 120px; /* Adjust button height */
+            width: calc(50% - 20px); /* Adjust button width */
+            height: 100px; /* Adjust button height */
             background-color: #007bff;
             color: white;
+            margin-top : 10px;
             border: none;
             border-radius: 5px;
-            font-size: 16px; /* Increase font size */
+            font-size: 14px; /* Decrease font size */
             cursor: pointer;
             transition: background-color 0.3s ease;
             display: flex;
@@ -91,8 +80,8 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
         }
         .button img {
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 60%;
+            max-height: 60%;
         }
         .button:hover {
             background-color: #0056b3;
@@ -136,22 +125,22 @@
 
     <div class="container">
         <button class="button" onclick="window.location.href='second_page.html'">
-            <img src="sample_image.jpg" alt="Button 1">
+            <img src="nirvana_logo.jpeg" alt="Button 1">
         </button>
         <button class="button" onclick="window.location.href='second_page.html'">
-            <img src="sample_image.jpg" alt="Button 2">
+            <img src="nirvana_logo.jpeg" alt="Button 2">
         </button>
         <button class="button" onclick="window.location.href='second_page.html'">
-            <img src="sample_image.jpg" alt="Button 3">
+            <img src="nirvana_logo.jpeg" alt="Button 3">
         </button>
         <button class="button" onclick="window.location.href='second_page.html'">
-            <img src="sample_image.jpg" alt="Button 4">
+            <img src="nirvana_logo.jpeg" alt="Button 4">
         </button>
         <button class="button" onclick="window.location.href='second_page.html'">
-            <img src="sample_image.jpg" alt="Button 5">
+            <img src="nirvana_logo.jpeg" alt="Button 5">
         </button>
         <button class="button" onclick="window.location.href='second_page.html'">
-            <img src="sample_image.jpg" alt="Button 6">
+            <img src="nirvana_logo.jpeg" alt="Button 6">
         </button>
     </div>
 
