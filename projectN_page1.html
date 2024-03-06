@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website - First Page</title>
+    <title>Escape Room - First Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -39,14 +38,8 @@
         .logo img:last-child {
             margin-right: 0;
         }
-        .logo-bottom {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
         .heading {
-            font-size: 40px;
+            font-size: 24px;
             font-weight: bold;
             text-transform: uppercase;
         }
@@ -66,16 +59,16 @@
         }
         .container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 50px;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
             justify-content: center;
             align-items: center;
             margin-top: 20px;
             text-align: center;
         }
         .button {
-            width: 300px;
+            width: 80%;
+            max-width: 300px;
             height: 150px;
             background-color: #007bff;
             color: white;
@@ -89,11 +82,9 @@
             align-items: center;
             margin: auto;
         }
-        .button.l {
-            margin-right: 0;
-        }
-        .button.r {
-            margin-left: 0;
+        .button img {
+            max-width: 100%;
+            max-height: 100%;
         }
         .button:hover {
             background-color: #0056b3;
@@ -107,10 +98,10 @@
             margin-top: auto;
         }
 
+        /* Media query for larger screens */
         @media (min-width: 768px) {
             .container {
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
             }
         }
     </style>
@@ -120,14 +111,14 @@
         <div class="logo logo-left">
             <img src="Logo_of_IIT_Bhilai_circle.png" alt="Logo 1">
         </div>
-        <div class="logo logo-right" style = "top: 10px">
-            <img src="Meraz logo.png" alt="Logo 2" style = "width: 90px">
+        <div class="logo logo-right">
+            <img src="Meraz logo.png" alt="Logo 2" style="width: 90px">
         </div>
         <div class="heading">
             Escape Room
         </div>
         <nav>
-            <a href="#">Homee</a>
+            <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
         </nav>
