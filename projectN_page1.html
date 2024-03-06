@@ -13,6 +13,7 @@
             flex-direction: column;
             min-height: 100vh;
             overflow-x: hidden; /* Remove horizontal scroll */
+            background-color: #f2f2f2; /* Set background color */
         }
         header {
             background-color: #333;
@@ -20,8 +21,16 @@
             padding: 20px;
             text-align: center;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logos {
+            display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 10px;
         }
         .logo img {
             width: 70px;
@@ -32,12 +41,19 @@
             font-size: 24px;
             font-weight: bold;
             text-transform: uppercase;
+            margin-bottom: 10px;
         }
         nav {
+            background-color: #007bff; /* Set background color for navigation box */
+            border-radius: 5px; /* Add border radius */
+            padding: 10px; /* Add padding */
             display: flex;
             justify-content: space-around;
             align-items: center;
-            flex-grow: 1; /* Allow navigation to take remaining space */
+            margin-bottom: 20px;
+            width: calc(100% - 40px); /* Calculate width */
+            max-width: 800px; /* Limit max width */
+            margin: 0 auto; /* Center horizontally */
         }
         nav a {
             color: white;
@@ -48,7 +64,7 @@
             transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #0056b3;
         }
         .container {
             display: grid;
@@ -100,14 +116,16 @@
 </head>
 <body>
     <header>
-        <div class="logo logo-left">
-            <img src="Logo_of_IIT_Bhilai_circle.png" alt="Logo 1">
-        </div>
-        <div class="heading">
-            Escape Room
-        </div>
-        <div class="logo logo-right">
-            <img src="Meraz logo.png" alt="Logo 2" style="width: 90px">
+        <div class="logos">
+            <div class="logo logo-left">
+                <img src="Logo_of_IIT_Bhilai_circle.png" alt="Logo 1">
+            </div>
+            <div class="heading">
+                Escape Room
+            </div>
+            <div class="logo logo-right">
+                <img src="Meraz logo.png" alt="Logo 2" style="width: 90px">
+            </div>
         </div>
         <nav>
             <a href="#">Home</a>
