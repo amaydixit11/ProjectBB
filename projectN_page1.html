@@ -13,12 +13,12 @@
             flex-direction: column;
             min-height: 100vh;
             overflow-x: hidden; /* Remove horizontal scroll */
-            background-color: #f2f2f2; /* Set background color */
+            background-color: #512316; /* Set background color */
+            background-image: url("bg.png");
         }
         header {
-            background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
         }
         .logos {
@@ -32,9 +32,16 @@
             margin-right: 10px;
         }
         .heading {
+            color: white;
             font-size: 24px;
             font-weight: bold;
             text-transform: uppercase;
+        }
+        .texture{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
         }
         nav {
             background-color: #007bff; /* Set background color for navigation box */
@@ -43,9 +50,10 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin: 10px 0;
+            margin: 10px 10px;
         }
         nav a {
+            background-color: #033265;
             color: white;
             text-decoration: none;
             font-size: 16px;
@@ -58,17 +66,17 @@
         }
         .container {
             display: flex;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
             justify-content: center;
-            gap: 20px;
-            padding: 0 20px; /* Add padding */
+            gap: 50px;
+            padding: 20px 20px; /* Add padding */
         }
         .button {
-            width: calc(50% - 20px); /* Adjust button width */
+            width: calc(25% - 20px); /* Adjust button width */
             height: 100px; /* Adjust button height */
             background-color: #007bff;
             color: white;
-            margin-top : 10px;
+            margin-top : 20px;
             border: none;
             border-radius: 5px;
             font-size: 14px; /* Decrease font size */
@@ -80,8 +88,8 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
         }
         .button img {
-            max-width: 60%;
-            max-height: 60%;
+            max-width: 90%;
+            max-height: 90%;
         }
         .button:hover {
             background-color: #0056b3;
@@ -91,7 +99,6 @@
             color: white;
             padding: 10px;
             text-align: center;
-            width: 100%;
             margin-top: auto;
         }
 
@@ -104,16 +111,17 @@
     </style>
 </head>
 <body>
+    <img class = "texture" src = "" width = 100% height = auto>
     <header>
         <div class="logos">
             <div class="logo logo-left">
-                <img src="Logo_of_IIT_Bhilai_circle.png" alt="Logo 1">
+                <img src="Logo_of_IIT_Bhilai_circle.png" alt="IITBh Logo">
             </div>
             <div class="heading">
                 Escape Room
             </div>
             <div class="logo logo-right">
-                <img src="Meraz logo.png" alt="Logo 2" style="width: 90px">
+                <img src="Meraz logo.png" alt="Meraz logo" style="width: 90px">
             </div>
         </div>
         <nav>
